@@ -12,42 +12,42 @@ FROM php:${PHP_VERSION}-fpm-alpine AS api_platform_php
 
 # persistent / runtime deps
 RUN apk add --no-cache \
-		acl \
-		fcgi \
-		file \
-		gettext \
-		git \
+	acl \
+	fcgi \
+	file \
+	gettext \
+	git \
 	;
 
 ARG APCU_VERSION=5.1.21
 RUN set -eux; \
 	apk add --no-cache --virtual .build-deps \
-		$PHPIZE_DEPS \
-		icu-data-full \
-		icu-dev \
-		libzip-dev \
-		zlib-dev \
+	$PHPIZE_DEPS \
+	icu-data-full \
+	icu-dev \
+	libzip-dev \
+	zlib-dev \
 	; \
 	\
 	docker-php-ext-configure zip; \
 	docker-php-ext-install -j$(nproc) \
-		intl \
-		zip \
+	intl \
+	zip \
 	; \
 	pecl install \
-		apcu-${APCU_VERSION} \
+	apcu-${APCU_VERSION} \
 	; \
 	pecl clear-cache; \
 	docker-php-ext-enable \
-		apcu \
-		opcache \
+	apcu \
+	opcache \
 	; \
 	\
 	runDeps="$( \
-		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions \
-			| tr ',' '\n' \
-			| sort -u \
-			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' \
+	scanelf --needed --nobanner --format '%n#p' --recursive /usr/local/lib/php/extensions \
+	| tr ',' '\n' \
+	| sort -u \
+	| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' \
 	)"; \
 	apk add --no-cache --virtual .api-phpexts-rundeps $runDeps; \
 	\
@@ -112,6 +112,7 @@ COPY docker/php/docker-entrypoint.sh /usr/local/bin/docker-entrypoint
 RUN chmod +x /usr/local/bin/docker-entrypoint
 
 ENV SYMFONY_PHPUNIT_VERSION=9
+RUN echo 'pm.max_children = 50' >> /usr/local/etc/php-fpm.d/zz-docker.conf
 
 ENTRYPOINT ["docker-entrypoint"]
 CMD ["php-fpm"]
@@ -122,10 +123,10 @@ FROM caddy:${CADDY_VERSION}-builder-alpine AS api_platform_caddy_builder
 
 # install Mercure and Vulcain modules
 RUN xcaddy build \
-    --with github.com/dunglas/mercure \
-    --with github.com/dunglas/mercure/caddy \
-    --with github.com/dunglas/vulcain \
-    --with github.com/dunglas/vulcain/caddy
+	--with github.com/dunglas/mercure \
+	--with github.com/dunglas/mercure/caddy \
+	--with github.com/dunglas/vulcain \
+	--with github.com/dunglas/vulcain/caddy
 
 FROM caddy:${CADDY_VERSION} AS api_platform_caddy
 

@@ -11,16 +11,16 @@ services:
     volumes:
       - php_socket:/var/run/php
     healthcheck:
-      interval: 10s
+      interval: 30s
       timeout: 3s
       retries: 3
       start_period: 30s
     environment:
       DATABASE_URL: postgresql://${POSTGRES_USER:-api-platform}:${POSTGRES_PASSWORD:-!ChangeMe!}@database:5432/${POSTGRES_DB:-api}?serverVersion=${POSTGRES_VERSION:-13}
       TRUSTED_PROXIES: ${TRUSTED_PROXIES:-127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16}
-      TRUSTED_HOSTS: ^${SERVER_NAME:-example\.com|localhost}|caddy$$
+      TRUSTED_HOSTS: ^${SERVER_NAME:-example\.com|-cda3-devops-julien.garage404.com}|caddy$$
       MERCURE_URL: ${CADDY_MERCURE_URL:-http://caddy/.well-known/mercure}
-      MERCURE_PUBLIC_URL: https://${SERVER_NAME:-localhost}/.well-known/mercure
+      MERCURE_PUBLIC_URL: https://${SERVER_NAME:-cda3-devops-julien.garage404.com}/.well-known/mercure
       MERCURE_JWT_SECRET: ${CADDY_MERCURE_JWT_SECRET:-!ChangeMe!}
 
   pwa:
@@ -40,7 +40,7 @@ services:
       - pwa
     environment:
       PWA_UPSTREAM: pwa:3000
-      SERVER_NAME: ${SERVER_NAME:-localhost}, caddy:80
+      SERVER_NAME: ${SERVER_NAME:-cda3-devops-julien.garage404.com}, caddy:80
       MERCURE_PUBLISHER_JWT_KEY: ${CADDY_MERCURE_JWT_SECRET:-!ChangeMe!}
       MERCURE_SUBSCRIBER_JWT_KEY: ${CADDY_MERCURE_JWT_SECRET:-!ChangeMe!}
     restart: unless-stopped
@@ -74,16 +74,16 @@ services:
       # you may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./api/docker/db/data:/var/lib/postgresql/data:rw
 
-# Mercure is installed as a Caddy module, prevent the Flex recipe from installing another service
-###> symfony/mercure-bundle ###
-###< symfony/mercure-bundle ###
+      # Mercure is installed as a Caddy module, prevent the Flex recipe from installing another service
+      ###> symfony/mercure-bundle ###
+      ###< symfony/mercure-bundle ###
 
 volumes:
   php_socket:
   caddy_data:
-  caddy_config:
-###> doctrine/doctrine-bundle ###
+  caddy_config: ###> doctrine/doctrine-bundle ###
+
   db_data:
-###< doctrine/doctrine-bundle ###
-###> symfony/mercure-bundle ###
-###< symfony/mercure-bundle ###
+    ###< doctrine/doctrine-bundle ###
+    ###> symfony/mercure-bundle ###
+    ###< symfony/mercure-bundle ###
