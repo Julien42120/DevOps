@@ -33,7 +33,7 @@ jobs:
           done
           exit 1
       - name: Check HTTP reachability
-        run: curl -v -o /dev/null http://cda3-devops-julien.garage404.com
+        run: curl -v -o /dev/null http://localhost
       - name: Check HTTPS reachability
         run: curl  -vk -o /dev/null https://cda3-devops-julien.garage404.com
       - name: Create test database
