@@ -54,4 +54,6 @@ jobs:
           with:
             source_branch: ""                                 # If blank, default: triggered branch
             destination_branch: "master"                      # If blank, default: master
-            github_token: ${{ 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 }}
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+
+            
