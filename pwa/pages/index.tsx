@@ -14,24 +14,24 @@ const Welcome = () => (
           rel="noopener noreferrer"
           href="https://api-platform.com"
         >
-          <Logo/>
+          <Logo />
         </a>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://les-tilleuls.coop"
         >
-          <Flag/>
+          <Flag />
         </a>
       </header>
       <section className="welcome__main">
         <div className="main__aside">
-          <div className="aside__circle"/>
-          <WebbyWelcome/>
+          <div className="aside__circle" />
+          <WebbyWelcome />
         </div>
         <div className="main__content">
           <h1>
-            Welcome to <strong>API Platform</strong>!
+            Welcome to <strong>Project DevOps</strong>!
           </h1>
           <div className="main__before-starting">
             <p>
@@ -49,14 +49,14 @@ const Welcome = () => (
               className="main__button"
             >
               Get started
-              <Arrow/>
+              <Arrow />
             </a>
           </div>
           <div className="main__other">
             <h2>Available services:</h2>
             <div className="other__bloc">
               <div className="other__circle">
-                <Api/>
+                <Api />
               </div>
               <div className="other__content">
                 <h3>
@@ -66,7 +66,7 @@ const Welcome = () => (
             </div>
             <div className="other__bloc">
               <div className="other__circle">
-                <Admin/>
+                <Admin />
               </div>
               <div className="other__content">
                 <h3>
@@ -78,7 +78,7 @@ const Welcome = () => (
             </div>
             <div className="other__bloc">
               <div className="other__circle">
-                <Mercure/>
+                <Mercure />
               </div>
               <div className="other__content">
                 <h3>
@@ -1081,7 +1081,7 @@ const Admin = () => (
       width="36.9"
       height="6.1"
     />
-    <rect x="426.6" y={222} className="adminst13" width={10} height="6.1"/>
+    <rect x="426.6" y={222} className="adminst13" width={10} height="6.1" />
     <rect
       x="229.6"
       y="237.9"
@@ -1194,7 +1194,7 @@ const Admin = () => (
       width={10}
       height="6.1"
     />
-    <rect x="403.1" y={222} className="adminst13" width={10} height="6.1"/>
+    <rect x="403.1" y={222} className="adminst13" width={10} height="6.1" />
     <rect
       x="403.1"
       y="237.9"
@@ -1328,18 +1328,18 @@ const Admin = () => (
       width="13.5"
       height="6.1"
     />
-    <circle className="adminst10" cx="349.7" cy="332.5" r={6}/>
-    <circle className="adminst12" cx="365.5" cy="332.5" r={6}/>
+    <circle className="adminst10" cx="349.7" cy="332.5" r={6} />
+    <circle className="adminst12" cx="365.5" cy="332.5" r={6} />
     <path
       className="adminst14"
       d="M365.5 338.8c-3.5 0-6.3-2.8-6.3-6.3 0-3.5 2.8-6.3 6.3-6.3 3.5 0 6.3 2.8 6.3 6.3C371.8 336 369 338.8 365.5 338.8zM365.5 326.7c-3.2 0-5.8 2.6-5.8 5.8s2.6 5.8 5.8 5.8 5.8-2.6 5.8-5.8S368.7 326.7 365.5 326.7z"
     />
-    <circle className="adminst12" cx="380.7" cy="332.5" r={6}/>
+    <circle className="adminst12" cx="380.7" cy="332.5" r={6} />
     <path
       className="adminst14"
       d="M380.7 338.8c-3.5 0-6.3-2.8-6.3-6.3 0-3.5 2.8-6.3 6.3-6.3 3.5 0 6.3 2.8 6.3 6.3C387 336 384.2 338.8 380.7 338.8zM380.7 326.7c-3.2 0-5.8 2.6-5.8 5.8s2.6 5.8 5.8 5.8 5.8-2.6 5.8-5.8S383.9 326.7 380.7 326.7z"
     />
-    <circle className="adminst12" cx="395.6" cy="332.8" r={6}/>
+    <circle className="adminst12" cx="395.6" cy="332.8" r={6} />
     <path
       className="adminst14"
       d="M395.6 339c-3.5 0-6.3-2.8-6.3-6.3 0-3.5 2.8-6.3 6.3-6.3 3.5 0 6.3 2.8 6.3 6.3C401.9 336.2 399.1 339 395.6 339zM395.6 327c-3.2 0-5.8 2.6-5.8 5.8s2.6 5.8 5.8 5.8 5.8-2.6 5.8-5.8S398.8 327 395.6 327z"
@@ -1349,7 +1349,7 @@ const Admin = () => (
       d="M363.4 359.2c-0.7 24.6-17.4 43.9-38.4 43.6 -21-0.3-37.4-20.5-36.7-45.1 0.7-24.6 14.1-37.7 35.1-37.4S364.1 334.6 363.4 359.2z"
     />
     <path
-      d="M322.3 318c-10.9-0.2-21.3 4.7-29.2 13.5 -7.9 8.8-8.2 14-8.5 26.6 -0.4 12.6 3.5 24.5 10.9 33.5 7.4 9.1 17.5 14.2 28.4 14.4 4.7 0.1 9.1-0.8 13.3-2.4 15.8-6.1 27.2-23.1 27.8-43.9C365.7 333.4 344.2 318.3 322.3 318zM324 400.6c-19.5-0.3-34.8-19.3-34.2-42.4 0.3-11.2 0.1-15.1 7.1-22.9 4-4.5 8.7-7.8 13.8-9.8 3.7-1.4 7.5-2.1 11.4-2.1 9.3 0.1 17.9 4.7 24.1 12.7 6.3 8.1 13.8 12.1 13.4 23.4C359 382.8 343.3 400.8 324 400.6z"/>
+      d="M322.3 318c-10.9-0.2-21.3 4.7-29.2 13.5 -7.9 8.8-8.2 14-8.5 26.6 -0.4 12.6 3.5 24.5 10.9 33.5 7.4 9.1 17.5 14.2 28.4 14.4 4.7 0.1 9.1-0.8 13.3-2.4 15.8-6.1 27.2-23.1 27.8-43.9C365.7 333.4 344.2 318.3 322.3 318zM324 400.6c-19.5-0.3-34.8-19.3-34.2-42.4 0.3-11.2 0.1-15.1 7.1-22.9 4-4.5 8.7-7.8 13.8-9.8 3.7-1.4 7.5-2.1 11.4-2.1 9.3 0.1 17.9 4.7 24.1 12.7 6.3 8.1 13.8 12.1 13.4 23.4C359 382.8 343.3 400.8 324 400.6z" />
     <path
       className="adminst18"
       d="M323.3 371.7c4.1 10.6 1.7 20.3-5.4 21.6 -7.1 1.3-16.1-6.2-20.2-16.8 -4.1-10.6-1.7-20.3 5.4-21.6C310.2 353.6 319.2 361.1 323.3 371.7z"
@@ -1363,7 +1363,7 @@ const Admin = () => (
       d="M397.1 364c-0.6 20.7-15.8 37.2-33.9 37 -18.1-0.3-32.3-17.2-31.7-37.9 0.6-20.7 13.1-33.1 31.2-32.9C380.8 330.5 397.7 343.3 397.1 364z"
     />
     <path
-      d="M361.7 327.8c-9.5-0.1-18.6 4-25.5 11.6 -6.9 7.5-8.2 13.4-8.5 24.1 -0.3 10.7 3.1 20.9 9.5 28.6 6.5 7.8 15.3 12.1 24.8 12.3 4.1 0.1 8.1-0.7 11.9-2.1 13.9-5.4 24.3-20.2 24.8-37.7C399.3 342.2 381.2 328 361.7 327.8zM393.2 364.4c-0.4 15.1-9.2 27.8-21.1 32.4 -3.1 1.2-6.5 1.8-10 1.8 -8-0.1-15.4-3.8-20.9-10.4 -5.6-6.6-8.5-15.4-8.2-24.6 0.4-15.1 6.6-23.7 18.4-28.2 3.1-1.2 6.5-1.8 10-1.8 8 0.1 17.1 3.3 22.6 9.9C389.6 350 393.5 355.1 393.2 364.4z"/>
+      d="M361.7 327.8c-9.5-0.1-18.6 4-25.5 11.6 -6.9 7.5-8.2 13.4-8.5 24.1 -0.3 10.7 3.1 20.9 9.5 28.6 6.5 7.8 15.3 12.1 24.8 12.3 4.1 0.1 8.1-0.7 11.9-2.1 13.9-5.4 24.3-20.2 24.8-37.7C399.3 342.2 381.2 328 361.7 327.8zM393.2 364.4c-0.4 15.1-9.2 27.8-21.1 32.4 -3.1 1.2-6.5 1.8-10 1.8 -8-0.1-15.4-3.8-20.9-10.4 -5.6-6.6-8.5-15.4-8.2-24.6 0.4-15.1 6.6-23.7 18.4-28.2 3.1-1.2 6.5-1.8 10-1.8 8 0.1 17.1 3.3 22.6 9.9C389.6 350 393.5 355.1 393.2 364.4z" />
     <path
       className="adminst18"
       d="M363 375.5c4 8.7 2.1 16.9-4.2 18.4 -6.3 1.4-14.8-4.5-18.8-13.2 -4-8.7-2.1-16.9 4.2-18.4C350.6 360.9 359 366.8 363 375.5z"
@@ -1663,7 +1663,7 @@ const Api = () => (
                 }
             `}
     </style>
-    <ellipse className="apist17" cx={349} cy="531.8" rx="65.6" ry="25.2"/>
+    <ellipse className="apist17" cx={349} cy="531.8" rx="65.6" ry="25.2" />
     <polyline
       className="apist18"
       points="258.9 104.3 202.1 24.7 196.6 27.3 257 110.5 "
@@ -1939,7 +1939,7 @@ const Mercure = () => (
       fill="#bbe1e3"
       r={45.6}
     />
-    <circle className="prefix__st1" cx={30.7} cy={34.2} r={6}/>
+    <circle className="prefix__st1" cx={30.7} cy={34.2} r={6} />
     <circle
       transform="rotate(-82.027 48.473 22.241)"
       className="prefix__st1"
@@ -2182,8 +2182,8 @@ const Mercure = () => (
       y2={-218.524}
       gradientTransform="matrix(1.3707 .02173 -.02176 1.3727 163.251 336.41)"
     >
-      <stop offset={0} stopColor="#76c8dd"/>
-      <stop offset={1} stopColor="#2ab3d7"/>
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
     </linearGradient>
     <path
       d="M30.5 40.4c-3.4-.1-6.1-2.9-6-6.2s2.9-6.1 6.2-6c3.4.1 6.1 2.9 6 6.2 0 3.3-2.8 6.1-6.2 6zm.2-11.8c-3.1 0-5.7 2.4-5.7 5.5s2.4 5.7 5.5 5.7 5.7-2.4 5.7-5.5c.1-3-2.4-5.6-5.5-5.7z"
@@ -2198,8 +2198,8 @@ const Mercure = () => (
       y2={320.571}
       gradientTransform="matrix(1.3707 .02173 .02176 -1.3727 161.031 476.425)"
     >
-      <stop offset={0} stopColor="#76c8dd"/>
-      <stop offset={1} stopColor="#2ab3d7"/>
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
     </linearGradient>
     <path
       d="M30.7 29.4c-2.7 0-4.9 2.1-4.9 4.7 0 .8.2 1.6.5 2.3.1-.1.3-.2.4-.3 2.7-1.5 5-2.8 6.6-5.2 0 0-.2 2.7-1.7 4-.4.3-.7.5-.9.7.8-.4 1.5-.9 2-1.5 0 0-.1 1.8-1.4 2.6-.5.3-.9.5-1.4.6.8-.2 1.3-.4 1.7-.6-.4 1.1-1.1 1.7-2.3 1.9-.4 0-.8-.1-1.1-.1.7.4 1.5.6 2.3.6 2.7 0 4.9-2.1 4.9-4.7.1-2.8-2-5-4.7-5z"
@@ -2218,8 +2218,8 @@ const Mercure = () => (
       y2={-308.435}
       gradientTransform="matrix(1.2945 .5263 -.506 1.2446 -278.654 336.448)"
     >
-      <stop offset={0} stopColor="#76c8dd"/>
-      <stop offset={1} stopColor="#2ab3d7"/>
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
     </linearGradient>
     <path
       d="M44.7 32.1c-5.7-2.3-8.5-8.6-6.3-14.1s8.7-8 14.4-5.7 8.5 8.6 6.3 14.1c-2.3 5.5-8.7 8-14.4 5.7zm7.7-19c-5.2-2.1-11.1.2-13.1 5.2s.6 10.8 5.8 12.9S56.2 31 58.3 26c1.9-4.9-.7-10.8-5.9-12.9z"
@@ -2234,8 +2234,8 @@ const Mercure = () => (
       y2={411.231}
       gradientTransform="matrix(1.27 .5163 .517 -1.2718 -332.746 476.702)"
     >
-      <stop offset={0} stopColor="#76c8dd"/>
-      <stop offset={1} stopColor="#2ab3d7"/>
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
     </linearGradient>
     <path
       d="M51.7 14.3c-4.4-1.8-9.4.3-11.2 4.7-.6 1.4-.7 2.8-.6 4.2.3-.1.6-.1.9-.2 5.4-.8 10.1-1.4 14.3-4.4 0 0-2 4.4-5.5 5.5-.8.2-1.4.4-2 .5 1.6-.2 3-.5 4.4-1.2 0 0-1.3 3-4.1 3.4-.9.2-1.7.2-2.5.2 1.4.2 2.4.2 3.2 0-1.3 1.6-2.9 2.1-5 1.6-.7-.2-1.3-.6-1.8-1 .9 1.1 2 2 3.4 2.5 4.4 1.8 9.4-.3 11.2-4.7s-.3-9.3-4.7-11.1z"
@@ -2254,8 +2254,8 @@ const Mercure = () => (
       y2={-400.692}
       gradientTransform="matrix(.822 1.0971 -1.0987 .8232 -659.793 -18.605)"
     >
-      <stop offset={0} stopColor="#76c8dd"/>
-      <stop offset={1} stopColor="#2ab3d7"/>
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
     </linearGradient>
     <path
       d="M61.4 41.6c-3-4-2.2-9.7 1.8-12.7s9.7-2.2 12.7 1.8 2.2 9.7-1.8 12.7-9.7 2.2-12.7-1.8zm13.9-10.4c-2.7-3.7-8-4.4-11.6-1.7-3.7 2.8-4.4 8-1.7 11.6 2.7 3.7 8 4.4 11.7 1.7s4.4-7.9 1.6-11.6z"
@@ -2270,8 +2270,8 @@ const Mercure = () => (
       y2={502.761}
       gradientTransform="matrix(.822 1.0971 1.0987 -.8232 -771.86 65.363)"
     >
-      <stop offset={0} stopColor="#76c8dd"/>
-      <stop offset={1} stopColor="#2ab3d7"/>
+      <stop offset={0} stopColor="#76c8dd" />
+      <stop offset={1} stopColor="#2ab3d7" />
     </linearGradient>
     <path
       d="M74.4 31.8c-2.4-3.2-6.8-3.8-10-1.4-1 .7-1.7 1.7-2.2 2.7.2.1.5.1.7.2 4.2 1.7 7.8 3.3 12.1 3 0 0-3.3 2.3-6.2 1.6-.6-.2-1.2-.3-1.6-.5 1.2.6 2.4 1 3.6 1 0 0-2.2 1.6-4.4.7-.8-.3-1.4-.7-1.9-1.1.9.8 1.6 1.2 2.3 1.4-1.6.6-3 .3-4.2-1-.4-.5-.6-1-.9-1.5.2 1.2.6 2.3 1.4 3.3 2.4 3.2 6.8 3.8 10 1.4 3-2.1 3.7-6.6 1.3-9.8z"
@@ -2296,7 +2296,7 @@ const Arrow = () => (
             `}
     </style>
     <defs>
-      <rect width="25.9" height={18}/>
+      <rect width="25.9" height={18} />
     </defs>
     <path
       className="linkst0"
@@ -2326,7 +2326,7 @@ const Flag = () => (
                 }
             `}
     </style>
-    <rect className="flagst0" width={830} height={42}/>
+    <rect className="flagst0" width={830} height={42} />
     <path
       className="flagst1"
       d="M241.2 27.1v-6.3c0-0.8-0.2-1.3-0.5-1.7 -0.3-0.4-0.8-0.6-1.5-0.6 -0.9 0-1.6 0.3-2 0.8s-0.7 1.3-0.7 2.4v5.4H235v-6.3c0-0.8-0.2-1.3-0.5-1.7 -0.3-0.4-0.8-0.6-1.5-0.6 -0.9 0-1.6 0.3-2 0.8 -0.4 0.5-0.6 1.4-0.6 2.7v5.1h-1.5v-9.6h1.2l0.2 1.3h0.1c0.3-0.5 0.7-0.8 1.2-1.1 0.5-0.3 1.1-0.4 1.7-0.4 1.5 0 2.5 0.5 3 1.6h0.1c0.3-0.5 0.7-0.9 1.2-1.2s1.2-0.4 1.9-0.4c1.1 0 1.9 0.3 2.4 0.8 0.5 0.6 0.8 1.5 0.8 2.7v6.3H241.2z"
@@ -2442,7 +2442,7 @@ const Flag = () => (
   </svg>
 );
 
-const HelpButton = ({Image, url, title}) => (
+const HelpButton = ({ Image, url, title }) => (
   <a
     target="_blank"
     rel="noopener noreferrer"
@@ -2450,7 +2450,7 @@ const HelpButton = ({Image, url, title}) => (
     className="help__circle"
     title={title}
   >
-    <Image/>
+    <Image />
   </a>
 );
 
@@ -2525,11 +2525,11 @@ const Logo = () => (
       className="logost0"
       d="M264.1 214.7l3.1 3.3 3.1-3.3c1.7-1.8 4.2-1.8 5.8 0l4.2 4.4c1.3 1.4 2.4 2.4 2.6 4.4v15.7c0 4.7-7.3 4.7-7.3 0 0-6.1 0-12.2 0-18.3h-4.8c0 6.1 0 12.2 0 18.3 0 4.8-7.2 4.8-7.2 0 0-6.1 0-12.2 0-18.3h-4.8c0 6.1 0 12.2 0 18.3 0 4.7-7.3 4.7-7.3 0v-15.7c0.1-2 1.2-2.9 2.6-4.4l4.2-4.4C260 212.9 262.5 212.9 264.1 214.7z"
     />
-    <circle className="logost1" cx="148.5" cy="122.7" r="70.1"/>
-    <ellipse className="logost2" cx="131.8" cy="147.2" rx="9.3" ry="2.3"/>
-    <ellipse className="logost2" cx="112.5" cy="146.7" rx="9.3" ry="2.3"/>
-    <ellipse className="logost2" cx="117.1" cy="160.5" rx="9.3" ry="2.3"/>
-    <ellipse className="logost2" cx="99.5" cy="153.9" rx="9.3" ry="2.3"/>
+    <circle className="logost1" cx="148.5" cy="122.7" r="70.1" />
+    <ellipse className="logost2" cx="131.8" cy="147.2" rx="9.3" ry="2.3" />
+    <ellipse className="logost2" cx="112.5" cy="146.7" rx="9.3" ry="2.3" />
+    <ellipse className="logost2" cx="117.1" cy="160.5" rx="9.3" ry="2.3" />
+    <ellipse className="logost2" cx="99.5" cy="153.9" rx="9.3" ry="2.3" />
     <polygon
       className="logost3"
       points="121.6 146 119.9 146 119.9 108.6 136.4 117.5 135.6 119 121.6 111.5 "
@@ -2613,19 +2613,19 @@ const Logo = () => (
       className="logost3"
       d="M145.4 116.6c-6.6 0-12-5.5-12-12.4 0-6.8 5.4-12.4 12-12.4 6.6 0 12 5.5 12 12.4C157.4 111 152 116.6 145.4 116.6zM145.4 93c-6 0-10.8 5-10.8 11.2 0 6.2 4.8 11.2 10.8 11.2s10.8-5 10.8-11.2C156.2 98.1 151.3 93 145.4 93z"
     />
-    <ellipse className="logost0" cx="162.6" cy="106.1" rx="9.4" ry="9.2"/>
+    <ellipse className="logost0" cx="162.6" cy="106.1" rx="9.4" ry="9.2" />
     <path
       className="logost3"
       d="M162.4 116c-5.5 0-10-4.4-10-9.8 0-5.4 4.5-9.8 10-9.8s10 4.4 10 9.8C172.4 111.6 167.9 116 162.4 116zM162.4 97.5c-4.9 0-8.8 3.9-8.8 8.6 0 4.8 3.9 8.6 8.8 8.6 4.9 0 8.8-3.9 8.8-8.6C171.2 101.4 167.2 97.5 162.4 97.5z"
     />
-    <circle className="logost3" cx="146.3" cy="104.8" r="5.2"/>
-    <circle className="logost0" cx="149.2" cy={104} r="1.4"/>
-    <ellipse className="logost3" cx="163.4" cy="106.7" rx="4.3" ry="4.1"/>
-    <circle className="logost0" cx="162.5" cy={106} r="1.2"/>
-    <ellipse className="logost2" cx={172} cy="147.5" rx="9.3" ry="2.3"/>
-    <ellipse className="logost2" cx="191.2" cy={147} rx="9.3" ry="2.3"/>
-    <ellipse className="logost2" cx="186.6" cy="160.8" rx="9.3" ry="2.3"/>
-    <ellipse className="logost2" cx="204.3" cy="154.2" rx="9.3" ry="2.3"/>
+    <circle className="logost3" cx="146.3" cy="104.8" r="5.2" />
+    <circle className="logost0" cx="149.2" cy={104} r="1.4" />
+    <ellipse className="logost3" cx="163.4" cy="106.7" rx="4.3" ry="4.1" />
+    <circle className="logost0" cx="162.5" cy={106} r="1.2" />
+    <ellipse className="logost2" cx={172} cy="147.5" rx="9.3" ry="2.3" />
+    <ellipse className="logost2" cx="191.2" cy={147} rx="9.3" ry="2.3" />
+    <ellipse className="logost2" cx="186.6" cy="160.8" rx="9.3" ry="2.3" />
+    <ellipse className="logost2" cx="204.3" cy="154.2" rx="9.3" ry="2.3" />
   </svg>
 );
 
@@ -2648,7 +2648,7 @@ const Slack = () => (
       d="M103 74.5c4.6-1.5 7.1-6.4 5.6-10.9 -1.5-4.6-6.4-7.1-10.9-5.6L28.6 80.4c-4.3 1.5-6.7 6.1-5.4 10.6 1.3 4.6 6.2 7.4 10.8 5.9L103 74.5"
       fill="#CE1E5B"
     />
-    <path d="M43 94l16.5-5.4 -5.4-16.5L37.6 77.5 43 94" fill="#392538"/>
+    <path d="M43 94l16.5-5.4 -5.4-16.5L37.6 77.5 43 94" fill="#392538" />
     <path
       d="M77.8 82.7c6.2-2 12-3.9 16.5-5.4L88.9 60.8 72.4 66.2 77.8 82.7"
       fill="#BB242A"
@@ -2800,7 +2800,7 @@ const WebbyWelcome = () => (
       rx="11.6"
       ry="11.2"
     />
-    <circle className="webbyWelcome2" cx="124.2" cy="118.2" r="3.2"/>
+    <circle className="webbyWelcome2" cx="124.2" cy="118.2" r="3.2" />
     <ellipse
       className="webbyWelcome2"
       cx="175.1"
@@ -2812,8 +2812,8 @@ const WebbyWelcome = () => (
       className="webbyWelcome0"
       d="M174.4 156.2c-18.1 0-32.8-15.2-32.8-33.8 0-18.7 14.7-33.8 32.8-33.8 18.1 0 32.8 15.2 32.8 33.8C207.2 141 192.5 156.2 174.4 156.2zM174.4 91.7c-16.3 0-29.5 13.7-29.5 30.6 0 16.9 13.2 30.6 29.5 30.6s29.5-13.7 29.5-30.6C203.9 105.5 190.7 91.7 174.4 91.7z"
     />
-    <circle className="webbyWelcome0" cx="177" cy="124" r="14.3"/>
-    <circle className="webbyWelcome2" cx="184.8" cy="121.8" r="4"/>
+    <circle className="webbyWelcome0" cx="177" cy="124" r="14.3" />
+    <circle className="webbyWelcome2" cx="184.8" cy="121.8" r="4" />
     <rect
       x="29.7"
       y="162.6"

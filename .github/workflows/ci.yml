@@ -48,8 +48,7 @@ jobs:
         run: docker compose exec -T pwa yarn test --ci --passWithNoTests
       - name: pull-request
         uses: repo-sync/pull-request@v2
-        with:
-          source_branch: ""                                 # If blank, default: triggered branch
+        with:                              
           destination_branch: "master"                      # If blank, default: master
           github_token: ${{ secrets.CI_TOKEN }}
 
