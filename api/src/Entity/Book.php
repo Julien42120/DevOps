@@ -1,5 +1,5 @@
 <?php
-
+//Entity
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
