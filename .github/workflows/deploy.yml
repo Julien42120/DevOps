@@ -15,8 +15,8 @@ jobs:
       - name: deploy-ovh
         uses: applboy/ssh-action@master
           with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY_DEPLOY }}
-          port: 22
-          script: cd DevOps && git pull
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            key: ${{ secrets.KEY_DEPLOY }}
+            port: 22
+            script: cd DevOps && git pull
