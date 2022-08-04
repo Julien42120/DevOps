@@ -31,7 +31,7 @@ const Welcome = () => (
         </div>
         <div className="main__content">
           <h1>
-            Welcome to <strong>DevOps DEPLOY OVH</strong>!
+            Welcome to <strong>DevOps DEPLOY</strong>!
           </h1>
           <div className="main__before-starting">
             <p>
