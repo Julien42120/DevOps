@@ -1,0 +1,22 @@
+name: DEPLOY
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  tests:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: deploy-ovh
+        uses: applboy/ssh-action@master
+          with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: git pull origin master
