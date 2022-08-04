@@ -47,7 +47,7 @@ jobs:
       - name: pull-request
         uses: repo-sync/pull-request@v2
         with:                              
-          destination_branch: "master"                      # If blank, default: master
+          destination_branch: "master"
           github_token: ${{ secrets.CI_TOKEN }}
 
           

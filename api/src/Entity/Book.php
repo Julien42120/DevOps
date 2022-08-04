@@ -1,5 +1,7 @@
 <?php
 
+// Entity
+
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
@@ -25,6 +27,7 @@ class Book
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $datePublished = null;
 
+    // hello
     public function getId(): ?int
     {
         return $this->id;
