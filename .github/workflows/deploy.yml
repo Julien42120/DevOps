@@ -13,10 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: deploy-ovh
-        uses: applboy/ssh-action@master
-          with:
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.USERNAME }}
-            key: ${{ secrets.KEY_DEPLOY }}
-            port: 22
-            script: cd DevOps && git pull
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY_DEPLOY }}
+          port: 22
+          script: cd DevOps && git pull
