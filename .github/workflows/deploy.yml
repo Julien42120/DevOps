@@ -17,6 +17,6 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY_DEPLOY }}
+          key: ${{ secrets.DEPLOY }}
           port: 22
           script: cd DevOps && git pull
