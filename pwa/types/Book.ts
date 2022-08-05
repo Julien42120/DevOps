@@ -5,7 +5,7 @@ export class Book {
     _id?: string,
     public author?: string,
     public name?: string,
-    public datePublished?: String
+    public datePublished?: string
   ) {
     this["@id"] = _id;
   }
