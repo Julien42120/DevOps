@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import Link from "next/link";
-import ReferenceLinks from "../../components/common/ReferenceLinks";
+import ReferenceLinks from "../common/ReferenceLinks";
 import { Book } from "../../types/Book";
 
 interface Props {
