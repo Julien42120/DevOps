@@ -78,9 +78,8 @@ export const Form: FunctionComponent<Props> = ({ book }) => {
                 value={values.author ?? ""}
                 type="text"
                 placeholder=""
-                className={`form-control${
-                  errors.author && touched.author ? " is-invalid" : ""
-                }`}
+                className={`form-control${errors.author && touched.author ? " is-invalid" : ""
+                  }`}
                 aria-invalid={errors.author && touched.author}
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -101,9 +100,8 @@ export const Form: FunctionComponent<Props> = ({ book }) => {
                 value={values.name ?? ""}
                 type="text"
                 placeholder=""
-                className={`form-control${
-                  errors.name && touched.name ? " is-invalid" : ""
-                }`}
+                className={`form-control${errors.name && touched.name ? " is-invalid" : ""
+                  }`}
                 aria-invalid={errors.name && touched.name}
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -120,11 +118,10 @@ export const Form: FunctionComponent<Props> = ({ book }) => {
                 value={values.datePublished ?? ""}
                 type="text"
                 placeholder=""
-                className={`form-control${
-                  errors.datePublished && touched.datePublished
+                className={`form-control${errors.datePublished && touched.datePublished
                     ? " is-invalid"
                     : ""
-                }`}
+                  }`}
                 aria-invalid={errors.datePublished && touched.datePublished}
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -138,9 +135,8 @@ export const Form: FunctionComponent<Props> = ({ book }) => {
 
             {status && status.msg && (
               <div
-                className={`alert ${
-                  status.isValid ? "alert-success" : "alert-danger"
-                }`}
+                className={`alert ${status.isValid ? "alert-success" : "alert-danger"
+                  }`}
                 role="alert"
               >
                 {status.msg}
