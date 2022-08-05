@@ -12,11 +12,11 @@ interface Violation {
 }
 
 export const fetch = async (id: string, init: RequestInit = {}) => {
-  if (typeof init.headers === "undefined") init.headers = {};
+  if (typeof init.headers === "null") init.headers = {};
   if (!init.headers.hasOwnProperty("Accept"))
     init.headers = { ...init.headers, Accept: MIME_TYPE };
   if (
-    init.body !== undefined &&
+    init.body !== null &&
     !(init.body instanceof FormData) &&
     !init.headers.hasOwnProperty("Content-Type")
   )
