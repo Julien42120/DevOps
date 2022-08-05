@@ -31,7 +31,7 @@ const Welcome = () => (
         </div>
         <div className="main__content">
           <h1>
-            Welcome to <strong>Projects DevOps DEPLOY Fucking Vercel</strong>!
+            Welcome to <strong>Projects DevOps DEPLOY Fucking Vercel 2 </strong>!
           </h1>
           <div className="main__before-starting">
             <p>
